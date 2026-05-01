@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FocusCat</string>
+    <string name="accessibility_service_description">FocusCat uses this service to detect when you open distracting apps and show a helpful cat overlay to keep you focused.</string>
+</resources>

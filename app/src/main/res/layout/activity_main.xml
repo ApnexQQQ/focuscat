@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFF8E7">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐱 FocusCat"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FF6B6B"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Block distractions with cute cats!"
+        android:textSize="16sp"
+        android:textColor="#666"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blocked apps: Instagram, TikTok, Facebook, Twitter, Snapchat, Reddit"
+        android:textSize="14sp"
+        android:textColor="#888"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnEnableOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Enable Overlay Permission"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4ECDC4"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnEnableAccessibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Enable Accessibility Service"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4ECDC4"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Start FocusCat! 🐱"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#FF6B6B"
+        android:textColor="#FFF" />
+
+</LinearLayout>

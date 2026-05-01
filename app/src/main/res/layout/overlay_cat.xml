@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6B6B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐱"
+            android:textSize="120sp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FocusCat says: Wait!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/countdownText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wait 5 seconds... 🐱"
+            android:textSize="24sp"
+            android:textColor="#FFF"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnGoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back Home 🏠"
+            android:textSize="18sp"
+            android:padding="16dp 32dp"
+            android:backgroundTint="#FFF"
+            android:textColor="#FF6B6B" />
+
+    </LinearLayout>
+
+</FrameLayout>
