@@ -1,0 +1,119 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.apnex.focuscat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:5:5-78
+11-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:6:5-77
+12-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:6:22-74
+13
+14    <permission
+14-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+15        android:name="com.apnex.focuscat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.apnex.focuscat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:8:5-42:19
+21        android:allowBackup="true"
+21-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:9:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:icon="@mipmap/ic_launcher"
+25-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:10:9-43
+26        android:label="@string/app_name"
+26-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:11:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:12:9-54
+28        android:supportsRtl="true"
+28-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:13:9-35
+29        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+29-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:14:9-65
+30        <activity
+30-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:16:9-23:20
+31            android:name="com.apnex.focuscat.MainActivity"
+31-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:17:13-41
+32            android:exported="true" >
+32-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:18:13-36
+33            <intent-filter>
+33-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:19:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:20:17-69
+34-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:20:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:21:17-77
+36-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <service
+40-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:25:9-28:40
+41            android:name="com.apnex.focuscat.OverlayService"
+41-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:26:13-43
+42            android:enabled="true"
+42-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:27:13-35
+43            android:exported="false" />
+43-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:28:13-37
+44        <service
+44-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:30:9-40:19
+45            android:name="com.apnex.focuscat.AppMonitorService"
+45-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:31:13-46
+46            android:exported="true"
+46-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:33:13-36
+47            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+47-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:32:13-79
+48            <intent-filter>
+48-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:34:13-36:29
+49                <action android:name="android.accessibilityservice.AccessibilityService" />
+49-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:35:17-92
+49-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:35:25-89
+50            </intent-filter>
+51
+52            <meta-data
+52-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:37:13-39:72
+53                android:name="android.accessibilityservice"
+53-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:38:17-60
+54                android:resource="@xml/accessibility_service_config" />
+54-->/root/.openclaw/workspace/focuscat-android/app/src/main/AndroidManifest.xml:39:17-69
+55        </service>
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+59            android:authorities="com.apnex.focuscat.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.4.1] /root/.gradle/caches/transforms-3/0a70172065f876b0f9b027210227e15c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.4.1] /root/.gradle/caches/transforms-3/0a70172065f876b0f9b027210227e15c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] /root/.gradle/caches/transforms-3/0a70172065f876b0f9b027210227e15c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+67        </provider>
+68    </application>
+69
+70</manifest>

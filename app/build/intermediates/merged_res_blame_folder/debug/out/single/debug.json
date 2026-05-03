@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/drawable_cat_overlay.jpg.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/drawable/cat_overlay.jpg"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_ic_shield.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/ic_shield.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_status_dot_ready.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/status_dot_ready.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_ic_overlay.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/ic_overlay.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/layout_activity_main.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/layout_activity_main.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_ic_clock.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_premium_button.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/premium_button.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_cat_hero.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/cat_hero.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_timer_ring_bg.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/timer_ring_bg.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_glass_button.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/glass_button.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_glow_circle.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/glow_circle.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_status_dot_active.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/status_dot_active.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_pulse_ring.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/pulse_ring.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_gradient_background.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/gradient_background.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/layout_overlay_cat.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/layout/overlay_cat.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_ic_accessibility.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/ic_accessibility.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_glass_card_small.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/glass_card_small.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_ambient_glow.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/ambient_glow.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/xml_accessibility_service_config.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_ic_check_active.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/ic_check_active.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/layout_overlay_cat.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/layout/overlay_cat.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_ic_home.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_cinematic_gradient.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/cinematic_gradient.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_timer_ring_progress.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/timer_ring_progress.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/drawable_cat_animation.gif.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/drawable/cat_animation.gif"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_ic_check_inactive.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/ic_check_inactive.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_glass_card.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/glass_card.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_breathing_gradient.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/breathing_gradient.xml"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_dark_overlay_gradient.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/dark_overlay_gradient.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/raw_cat_video.mp4.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/raw/cat_video.mp4"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_status_dot_inactive.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/status_dot_inactive.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-merged_res-21:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.5/com.apnex.focuscat.app-main-23:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.apnex.focuscat.app-merged_res-21:/drawable_glass_button_emerald.xml.flat",
+        "source": "com.apnex.focuscat.app-main-23:/drawable/glass_button_emerald.xml"
+    }
+]

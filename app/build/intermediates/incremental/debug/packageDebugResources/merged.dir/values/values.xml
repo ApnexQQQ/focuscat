@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="charcoal">#1A1A1A</color>
+    <color name="emerald_glow">#34D399</color>
+    <color name="emerald_green">#10B981</color>
+    <color name="glass_dark">#1A000000</color>
+    <color name="glass_emerald">#1A10B981</color>
+    <color name="glass_white">#1AFFFFFF</color>
+    <color name="glow_emerald">#4010B981</color>
+    <color name="glow_soft">#20FFFFFF</color>
+    <color name="gradient_end">#16213E</color>
+    <color name="gradient_mid">#1A1A2E</color>
+    <color name="gradient_start">#0D0D0D</color>
+    <color name="graphite_light">#3D3D3D</color>
+    <color name="matte_black">#0D0D0D</color>
+    <color name="mint_glow">#A7F3D0</color>
+    <color name="neon_mint">#6EE7B7</color>
+    <color name="soft_beige">#F5F5DC</color>
+    <color name="soft_graphite">#2D2D2D</color>
+    <color name="text_muted">#71717A</color>
+    <color name="text_primary">#FAF9F6</color>
+    <color name="text_secondary">#A1A1AA</color>
+    <color name="warm_cream">#FAF9F6</color>
+    <string name="accessibility_service_description">FocusCat uses this service to detect when you open distracting apps and show a helpful cat overlay to keep you focused.</string>
+    <string name="app_name">FocusCat</string>
+    <style name="PremiumDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/charcoal</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+    <style name="Theme.FocusCat" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/emerald_green</item>
+        <item name="colorPrimaryDark">@color/matte_black</item>
+        <item name="colorAccent">@color/emerald_glow</item>
+        
+        
+        <item name="android:windowBackground">@color/matte_black</item>
+        <item name="android:statusBarColor">@color/matte_black</item>
+        <item name="android:navigationBarColor">@color/matte_black</item>
+        
+        
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

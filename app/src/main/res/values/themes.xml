@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FocusCat" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/emerald_green</item>
+        <item name="colorPrimaryDark">@color/matte_black</item>
+        <item name="colorAccent">@color/emerald_glow</item>
+        
+        <!-- Background -->
+        <item name="android:windowBackground">@color/matte_black</item>
+        <item name="android:statusBarColor">@color/matte_black</item>
+        <item name="android:navigationBarColor">@color/matte_black</item>
+        
+        <!-- No Action Bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <style name="PremiumDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/charcoal</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+</resources>

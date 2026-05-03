@@ -13,6 +13,8 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.VideoView
+import android.net.Uri
 
 class OverlayService : Service() {
 
@@ -68,6 +70,17 @@ class OverlayService : Service() {
 
         val countdownText = overlayView?.findViewById<TextView>(R.id.countdownText)
         val btnGoHome = overlayView?.findViewById<Button>(R.id.btnGoHome)
+        val catVideo = overlayView?.findViewById<VideoView>(R.id.catVideo)
+
+        // Play the cat video
+        catVideo?.let {
+            val videoUri = Uri.parse("android.resource://$packageName/${R.raw.cat_video}")
+            it.setVideoURI(videoUri)
+            it.setOnPreparedListener { mediaPlayer ->
+                mediaPlayer.isLooping = true
+                it.start()
+            }
+        }
 
         btnGoHome?.setOnClickListener {
             val homeIntent = Intent(Intent.ACTION_MAIN).apply {
@@ -80,20 +93,35 @@ class OverlayService : Service() {
 
         windowManager?.addView(overlayView, params)
 
-        // 5-second countdown
-        countdownTimer = object : CountDownTimer(5000, 1000) {
-            override fun onTick(millisUntilFinished: Long) {
-                val seconds = millisUntilFinished / 1000 + 1
-                countdownText?.text = "Wait $seconds seconds... 🐱"
+        // Update countdown every second
+        val timerManager = TimerManager(this)
+        val handler = android.os.Handler(android.os.Looper.getMainLooper())
+        
+        val updateRunnable = object : Runnable {
+            override fun run() {
+                if (!timerManager.isTimerActive()) {
+                    removeOverlay()
+                    return
+                }
+                
+                val (hours, minutes) = timerManager.getRemainingTime()
+                val seconds = timerManager.getRemainingSeconds()
+                val timeStr = if (hours > 0) {
+                    String.format("%02d:%02d:%02d remaining", hours, minutes, seconds)
+                } else {
+                    String.format("%02d:%02d remaining", minutes, seconds)
+                }
+                countdownText?.text = timeStr
+                
+                handler.postDelayed(this, 1000)
             }
-
-            override fun onFinish() {
-                removeOverlay()
-            }
-        }.start()
+        }
+        handler.post(updateRunnable)
     }
 
     fun removeOverlay() {
+        // Stop video playback
+        overlayView?.findViewById<VideoView>(R.id.catVideo)?.stopPlayback()
         overlayView?.let {
             windowManager?.removeView(it)
             overlayView = null
@@ -102,6 +130,12 @@ class OverlayService : Service() {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        // Show overlay when requested
+        if (intent?.getBooleanExtra("show_overlay", false) == true) {
+            android.os.Handler(android.os.Looper.getMainLooper()).post {
+                showOverlay()
+            }
+        }
         return START_STICKY
     }
 }

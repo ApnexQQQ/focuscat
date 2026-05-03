@@ -7,30 +7,25 @@ import android.view.accessibility.AccessibilityEvent
 class AppMonitorService : AccessibilityService() {
 
     private var lastPackage = ""
+    private lateinit var timerManager: TimerManager
+
+    override fun onCreate() {
+        super.onCreate()
+        timerManager = TimerManager(this)
+    }
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
         if (event?.eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
             val packageName = event.packageName?.toString() ?: return
 
-            // Avoid duplicate triggers
-            if (packageName == lastPackage) return
-            lastPackage = packageName
-
-            // Check if it's a blocked app
-            if (OverlayService.blockedApps.contains(packageName)) {
-                if (OverlayService.isRunning) {
-                    // Start overlay service and show the cat
+            // Only block if timer is active
+            if (timerManager.isTimerActive()) {
+                // Check if it's a blocked app - always block, no duplicate prevention
+                if (OverlayService.blockedApps.contains(packageName)) {
+                    // Start overlay service - it will show the overlay automatically
                     val intent = Intent(this, OverlayService::class.java)
+                    intent.putExtra("show_overlay", true)
                     startService(intent)
-                    
-                    // Show the overlay
-                    (applicationContext.getSystemService(OVERLAY_SERVICE) as? android.view.WindowManager)?.let {
-                        // Use a handler to show overlay after service starts
-                        android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
-                            val service = OverlayService()
-                            service.showOverlay()
-                        }, 100)
-                    }
                 }
             }
         }
