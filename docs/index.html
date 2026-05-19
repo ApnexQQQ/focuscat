@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusCat - Take Back Control of Screen Time</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 20px;
+        }
+        
+        .phone-mockup {
+            width: 280px;
+            height: 560px;
+            background: #0f0f23;
+            border-radius: 40px;
+            padding: 15px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+        }
+        
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #2d3561 0%, #1a1a2e 100%);
+            border-radius: 30px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .cat-emoji {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        
+        .app-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .timer {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        
+        .cta-section {
+            flex: 1;
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff6b6b, #ee5a5a);
+            color: white;
+            text-decoration: none;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(255,107,107,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255,107,107,0.5);
+        }
+        
+        .download-note {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 60px 20px;
+        }
+        
+        .feature {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #feca57;
+        }
+        
+        .feature p {
+            color: #a0a0a0;
+            line-height: 1.6;
+        }
+        
+        .how-it-works {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .how-it-works h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .step {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 20px;
+            width: 280px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .blocked-apps {
+            padding: 40px 20px;
+            text-align: center;
+            background: rgba(0,0,0,0.2);
+        }
+        
+        .blocked-apps h2 {
+            margin-bottom: 20px;
+        }
+        
+        .app-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .app-icon {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 25px;
+            border-radius: 15px;
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .install-instructions {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 40px 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .install-instructions h3 {
+            color: #feca57;
+            margin-bottom: 20px;
+        }
+        
+        .install-instructions ol {
+            text-align: left;
+            color: #a0a0a0;
+            line-height: 2;
+            padding-left: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .phone-mockup {
+                width: 240px;
+                height: 480px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🐱</div>
+            <h1>FocusCat</h1>
+            <p class="tagline">The fun way to beat screen addiction. Block distracting apps with adorable pets that keep you focused.</p>
+        </header>
+        
+        <section class="hero">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="cat-emoji">🐱</div>
+                    <div class="app-title">FocusCat</div>
+                    <div class="timer">45:00</div>
+                    <p style="color: #888; margin-top: 20px;">Stay focused!</p>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>Download FocusCat</h2>
+                <p style="color: #a0a0a0; margin-bottom: 20px;">Free • No ads • No signup required</p>
+                <a href="https://github.com/ApnexQQQ/focuscat/releases/download/v1.0.0/focuscat-v1.2.1-WORKING.apk" class="cta-button">
+                    📥 Download APK
+                </a>
+                <p class="download-note">Android 8.0+ required<br>Direct download from GitHub</p>
+                
+                <div class="install-instructions">
+                    <h3>How to Install</h3>
+                    <ol>
+                        <li>Download the APK file</li>
+                        <li>Open your Downloads folder</li>
+                        <li>Tap the APK file</li>
+                        <li>If prompted, allow "Install from unknown sources"</li>
+                        <li>Follow the installation prompts</li>
+                        <li>Open FocusCat and set your PIN!</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <div class="feature-icon">⏱️</div>
+                <h3>Smart Timer</h3>
+                <p>Set focus sessions from 5 minutes to 8 hours. Choose what works for your schedule.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🐾</div>
+                <h3>Adorable Pets</h3>
+                <p>Pick your companion: Cat, Dog, Bunny, or Sloth. They appear when you try to open blocked apps.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📹</div>
+                <h3>Parent Messages</h3>
+                <p>Record personalized video messages that play when kids try to access blocked apps.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Usage Stats</h3>
+                <p>Track your progress with detailed statistics on focused time and blocked attempts.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌙</div>
+                <h3>Smart Schedules</h3>
+                <p>Set automatic blocking for bedtime, school hours, or dinner time. Set it and forget it.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>PIN Protected</h3>
+                <p>Only you can disable the blocker. Perfect for parents managing kids' screen time.</p>
+            </div>
+        </section>
+        
+        <section class="blocked-apps">
+            <h2>Block These Apps & More</h2>
+            <div class="app-icons">
+                <span class="app-icon">📱 Instagram</span>
+                <span class="app-icon">🎵 TikTok</span>
+                <span class="app-icon">💬 Snapchat</span>
+                <span class="app-icon">🐦 Twitter</span>
+                <span class="app-icon">👥 Facebook</span>
+                <span class="app-icon">🔴 Reddit</span>
+            </div>
+        </section>
+        
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Install & Setup</h3>
+                    <p>Download and install FocusCat. Set your 4-digit PIN and choose your pet.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Select Apps to Block</h3>
+                    <p>Choose which apps distract you most. Instagram? TikTok? You decide.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Start Focusing</h3>
+                    <p>Set your timer and get to work. If you try to open a blocked app, your pet appears!</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Made with ❤️ for people who want to focus</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">FocusCat © 2026 • Questions? Contact us</p>
+        </footer>
+    </div>
+</body>
+</html>
